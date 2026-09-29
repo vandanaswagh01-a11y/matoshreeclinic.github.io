@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Matoshree Clinic — Dr. Vandana Wagh, BHMS, CCMP Modern Pharmacology. Daycare and consultation services in Panchavati, Nashik.">
-  <title>Matoshree Clinic | Dr. Vandana Wagh | Panchavati, Nashik</title>
+  <meta name="description" content="Matoshree Clinic — Dr. Vandana Sunil Wagh, BHMS, CCMP Modern Pharmacology. Consultation and daycare services in Panchavati, Nashik.">
+  <title>Matoshree Clinic | Dr. Vandana Sunil Wagh | Panchavati, Nashik</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -13,17 +13,19 @@
 <body>
   <header class="header">
     <div class="container nav">
-      <a class="brand" href="#home">
+      <a class="brand" href="#home" aria-label="Matoshree Clinic home">
         <img src="logo.svg" alt="Matoshree Clinic logo">
         <span>Matoshree <b>Clinic</b></span>
       </a>
-      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <button class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
       <nav class="nav-links">
-        <a href="#about">About</a>
+        <a href="#about">Doctor</a>
         <a href="#services">Services</a>
+        <a href="#gallery">Clinic</a>
+        <a href="#appointment">Appointment</a>
         <a href="#timings">Timings</a>
         <a href="#contact">Contact</a>
-        <a class="nav-cta" href="https://wa.me/919422753278?text=Hello%20Matoshree%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book Appointment</a>
+        <a class="nav-cta" href="#appointment">Book Appointment</a>
       </nav>
     </div>
   </header>
@@ -35,9 +37,9 @@
         <div class="hero-copy">
           <div class="eyebrow">COMPASSIONATE CARE • PANCHAVATI, NASHIK</div>
           <h1>Healthcare with<br><span>a personal touch.</span></h1>
-          <p class="hero-text">Welcome to Matoshree Clinic. Consultation and daycare services with a patient-first approach by Dr. Vandana Wagh.</p>
+          <p class="hero-text">Welcome to Matoshree Clinic. Consultation and daycare services with a patient-first approach by Dr. Vandana Sunil Wagh.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="https://wa.me/919422753278?text=Hello%20Matoshree%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp <span>→</span></a>
+            <a class="btn primary" href="#appointment">Book an Appointment <span>→</span></a>
             <a class="btn secondary" href="tel:+919422753278">Call 94227 53278</a>
           </div>
           <div class="trust-row">
@@ -46,27 +48,31 @@
             <div><strong>Daycare</strong><small>Services available</small></div>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="doctor-placeholder">
-            <div class="medical-mark">✚</div>
-            <p>Dr. Vandana Wagh</p>
+
+        <div class="hero-card doctor-hero">
+          <img src="doctor-vandana-wagh.png" alt="Dr. Vandana Sunil Wagh" class="doctor-photo">
+          <div class="doctor-caption">
+            <strong>Dr. Vandana Sunil Wagh</strong>
             <span>BHMS • CCMP Modern Pharmacology</span>
           </div>
-          <div class="open-badge"><i></i> Open today • See timings</div>
+          <div class="open-badge"><i></i> Consultation by appointment</div>
         </div>
       </div>
     </section>
 
     <section class="section intro" id="about">
-      <div class="container two-col">
-        <div>
-          <div class="eyebrow">ABOUT MATOSHREE CLINIC</div>
-          <h2>Care that puts <em>you</em> first.</h2>
+      <div class="container doctor-section">
+        <div class="doctor-profile-image">
+          <img src="doctor-vandana-wagh.png" alt="Dr. Vandana Sunil Wagh in clinic attire">
         </div>
-        <div class="body-copy">
+        <div class="doctor-profile-copy">
+          <div class="eyebrow">MEET THE DOCTOR</div>
+          <h2>Dr. Vandana<br><em>Sunil Wagh</em></h2>
+          <p class="qualification">BHMS • CCMP Modern Pharmacology</p>
           <p>Matoshree Clinic is a neighbourhood clinic in Panchavati, Nashik, offering consultation and daycare services in a comfortable and welcoming setting.</p>
-          <p>Dr. Vandana Wagh provides consultation in gynecology, dermatology and pediatric care.</p>
+          <p>Consultation areas include gynecology, dermatology and pediatric care, along with general consultation and daycare services as appropriate.</p>
           <div class="mini-note"><span>⌖</span><div><b>Conveniently located</b><br>Perfect Housing Society, Perfect Corner, Krishna Nagar, Panchavati, Nashik.</div></div>
+          <a class="btn primary profile-cta" href="#appointment">Book an Appointment →</a>
         </div>
       </div>
     </section>
@@ -81,9 +87,71 @@
           <article class="service-card"><div class="icon">♀</div><h3>Gynecology</h3><p>Consultation and care for women's health concerns.</p></article>
           <article class="service-card"><div class="icon">✦</div><h3>Dermatology</h3><p>Consultation for common skin and related concerns.</p></article>
           <article class="service-card"><div class="icon">♡</div><h3>Pediatric Care</h3><p>Consultation and supportive care for children.</p></article>
+          <article class="service-card"><div class="icon">+</div><h3>General Consultation</h3><p>General medical consultation and guidance.</p></article>
           <article class="service-card"><div class="icon">+</div><h3>Daycare Services</h3><p>Daycare services available as advised for the patient's needs.</p></article>
         </div>
         <div class="fee-note"><b>Consultation / service charges</b><span>Starting from ₹100, depending on the service provided.</span></div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <div><div class="eyebrow">OUR CLINIC</div><h2>A comfortable place for care</h2></div>
+          <p>Take a look at the clinic environment before your visit.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-large" data-lightbox="doctor-vandana-wagh.png" aria-label="View doctor photograph">
+            <img src="doctor-vandana-wagh.png" alt="Dr. Vandana Sunil Wagh">
+            <span>Meet the Doctor</span>
+          </button>
+          <button class="gallery-item" data-lightbox="clinic-interior.jpg" aria-label="View clinic interior">
+            <img src="clinic-interior.jpg" alt="Matoshree Clinic consultation and treatment areas">
+            <span>Clinic Interior</span>
+          </button>
+          <button class="gallery-item" data-lightbox="clinic-exterior.png" aria-label="View clinic exterior">
+            <img src="clinic-exterior.png" alt="Matoshree Clinic exterior">
+            <span>Clinic Exterior</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section appointment" id="appointment">
+      <div class="container appointment-grid">
+        <div class="appointment-copy">
+          <div class="eyebrow">BOOK AN APPOINTMENT</div>
+          <h2>Choose a convenient time.</h2>
+          <p>Fill in the details below. When you submit the form, WhatsApp will open with your appointment information ready to send to the clinic.</p>
+          <div class="appointment-info">
+            <div><strong>Phone</strong><a href="tel:+919422753278">94227 53278</a></div>
+            <div><strong>Location</strong><span>Panchavati, Nashik</span></div>
+          </div>
+        </div>
+
+        <form class="appointment-form" id="appointmentForm">
+          <label>Patient name
+            <input type="text" id="patientName" required placeholder="Enter your name">
+          </label>
+          <label>Phone number
+            <input type="tel" id="patientPhone" required inputmode="tel" placeholder="Enter phone number">
+          </label>
+          <div class="form-two">
+            <label>Preferred date
+              <input type="date" id="appointmentDate" required>
+            </label>
+            <label>Preferred time
+              <select id="appointmentTime" required>
+                <option value="">Select time</option>
+              </select>
+            </label>
+          </div>
+          <label>Reason for visit
+            <textarea id="visitReason" rows="3" placeholder="Optional"></textarea>
+          </label>
+          <button class="btn primary submit-btn" type="submit">Continue to WhatsApp →</button>
+          <p class="form-note">Submitting this form does not confirm an appointment. The clinic will respond through WhatsApp.</p>
+        </form>
       </div>
     </section>
 
@@ -93,7 +161,7 @@
           <div class="eyebrow">CLINIC HOURS</div>
           <h2>We're here when<br>you need us.</h2>
           <p>Appointments and consultations are available during the hours below.</p>
-          <a class="btn primary" href="https://wa.me/919422753278?text=Hello%20Matoshree%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Request an Appointment →</a>
+          <a class="btn primary" href="#appointment">Request an Appointment →</a>
         </div>
         <div class="hours-card">
           <div class="hours-row"><b>Monday</b><span>10:30 AM–2:00 PM<br>6:30 PM–9:30 PM</span></div>
@@ -117,6 +185,7 @@
           <div class="contact-actions">
             <a class="btn primary" href="tel:+919422753278">Call Clinic</a>
             <a class="btn whatsapp" href="https://wa.me/919422753278?text=Hello%20Matoshree%20Clinic%2C%20I%20need%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn map-btn" href="https://www.google.com/maps/search/?api=1&query=Perfect+Housing+Society%2C+Perfect+Corner%2C+Krishna+Nagar%2C+Panchavati%2C+Nashik%2C+Maharashtra+422003" target="_blank" rel="noopener">Get Directions →</a>
           </div>
         </div>
         <div class="map-wrap">
@@ -134,10 +203,15 @@
     </div>
   </footer>
 
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightboxImage" src="" alt="">
+  </div>
+
   <div class="mobile-bar">
     <a href="tel:+919422753278">☎ Call</a>
     <a href="https://wa.me/919422753278?text=Hello%20Matoshree%20Clinic%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">☘ WhatsApp</a>
-    <a href="#timings">◷ Timings</a>
+    <a href="#appointment">📅 Appointment</a>
   </div>
   <script src="script.js"></script>
 </body>
